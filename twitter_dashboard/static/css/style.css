@@ -1,0 +1,45 @@
+body {
+  background-color: #FFFFFF;
+  color: #C6C7C4;
+  font-family: Helvetica;
+}
+
+h2 {
+  padding: 20px;
+  margin:0px;
+  background-color: #55ACEE;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  text-align: center
+}
+
+h3 {
+  margin: 10px;
+  margin-left: 0px;
+}
+
+p {
+  margin: 4px;
+}
+
+div {
+  padding: 6px;
+}
+
+input {
+  margin : 10px;
+}
+
+button {
+  background-color: #BCE27F;
+  border: none;
+}
+
+a {
+  display:block;
+  margin-top: 20px
+}
+
+a:link, a:visited {
+  color : #C6C7C4;
+}
