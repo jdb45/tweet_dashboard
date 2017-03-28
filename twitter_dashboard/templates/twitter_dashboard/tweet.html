@@ -2,7 +2,43 @@
 {% block content %}
 
 <h2>Twitter Dashboard</h2>
+<div id="top_trending">
+  <p> Top Trending Tweets </p>
+</div>
 
+<div>
+    <input type="text" id="search_tweets" name="search" placeholder="Search.." value ="">
+ </div>
 
+<div id="stop_button">
+  <button type="submit">Stop Search</button>
+</div>
+
+<canvas id="tweet_canvas" width="600" height="200" style="border:1px solid #000000;">
+</canvas>
+
+<button id="search_button" onclick="insertTweet()">Search!</button>
+
+<p id="live_tweet"></p>
+
+<script>
+function insertTweet() {
+    var get_tweet = document.getElementById("search_tweets").value;
+    var canvas = document.getElementById("tweet_canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "25px Comic Sans MS";
+    ctx.fillStyle = "blue";
+    ctx.textAlign = "center";
+    ctx.fillText(get_tweet, canvas.width/2, canvas.height/2);
+}
+</script>
+
+<div>
+  <ol id="top_ten">
+  {% for name in names %}
+      <li>{{ name.name }}</li>
+  {% endfor %}
+  </ol>
+</div>
 
 {% endblock %}

@@ -31,15 +31,83 @@ input {
 }
 
 button {
-  background-color: #BCE27F;
-  border: none;
+   background-color: #55ACEE;
+   border: none;
+   color: white;
+   padding: 4px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 10px;
 }
 
-a {
-  display:block;
-  margin-top: 20px
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
-a:link, a:visited {
-  color : #C6C7C4;
+input[type=text]:focus {
+    width: 25%;
+
+}
+
+ol {
+    background: #55ACEE;
+    padding: 10px;
+    width: 17%
+}
+
+ol li {
+    padding: 1px;
+    margin-left: 18px;
+}
+
+#top_ten{
+  color: #FFFFFF;
+  position: absolute;
+  left: 13.8px;
+  top: 125px;
+  width: 17.3%
+}
+
+#top_trending{
+  font-family: Helvetica;
+  background: #55ACEE;
+  color: #FFFFFF;
+  position: absolute;
+  left: 13.8px;
+  top: 112px;
+  width: 17.9%
+}
+
+#search_tweets{
+  position: absolute;
+  left: 450px;
+  top: 79px;
+}
+
+#stop_button{
+  position: absolute;
+  left: 800px;
+  top: 82px;
+}
+
+#tweet_canvas{
+  position: absolute;
+  left: 350px;
+  top: 400px;
+}
+
+#search_button{
+  position: absolute;
+  left: 460px;
+  top: 130px;
+}
+
+#live_tweet{
+  position: absolute;
+  left: 420px;
+  top: 220px;
+  color: #000000;
 }
