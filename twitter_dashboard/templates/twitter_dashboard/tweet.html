@@ -6,32 +6,18 @@
   <p> Top Trending Tweets </p>
 </div>
 
-<div>
-    <input type="text" id="search_tweets" name="search" placeholder="Search.." value ="">
- </div>
-
 <div id="stop_button">
   <button type="submit">Stop Search</button>
 </div>
 
-<canvas id="tweet_canvas" width="600" height="200" style="border:1px solid #000000;">
-</canvas>
+<div>
+  <form method="POST" action="{% url 'live_tweets' %}">
+  {% csrf_token %}
+  <input type="text" id="search_tweets" name="search" placeholder="Search.." value ="">
+  <button id="search_button" type="submit" value ="search_tweets">Search!</button>
+  </form>
+</div>
 
-<button id="search_button" onclick="insertTweet()">Search!</button>
-
-<p id="live_tweet"></p>
-
-<script>
-function insertTweet() {
-    var get_tweet = document.getElementById("search_tweets").value;
-    var canvas = document.getElementById("tweet_canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.font = "25px Comic Sans MS";
-    ctx.fillStyle = "blue";
-    ctx.textAlign = "center";
-    ctx.fillText(get_tweet, canvas.width/2, canvas.height/2);
-}
-</script>
 
 <div>
   <ol id="top_ten">
@@ -40,5 +26,61 @@ function insertTweet() {
   {% endfor %}
   </ol>
 </div>
+
+
+<div>
+  <p id="live_tweet">Live Tweets</p>
+  <ol id="tweet_real_time">
+  </ol>
+</div>
+
+<script>
+function cpu_system() {
+
+  var xml_http_requests;
+
+  if (window.XMLHttpRequest)
+
+    {//requests for newer browsers
+
+    xml_http_requests = new XMLHttpRequest();
+
+    }
+
+  else
+
+    {// requests for older browsers
+
+    xml_http_requests = new ActiveXObject("Microsoft.XMLHTTP");
+
+    }
+
+  xml_http_requests.onreadystatechange = function()
+
+    {
+
+    if (xml_http_requests.readyState==4 && xml_http_requests.status==200)
+
+      {
+
+      document.getElementById("tweet_real_time").innerHTML = xml_http_requests.responseText;
+
+      }
+
+    };
+    // gets the system.txt file and refreshes it every 3 seconds or so
+  setInterval(function() {
+
+    xml_http_requests.open("GET", "/static/text/system.txt", true);
+
+    xml_http_requests.send();
+
+  }, 3000);
+
+}
+// runs this script on startup
+window.onload = cpu_system;
+</script>
+
 
 {% endblock %}
