@@ -3,10 +3,10 @@ from TwitterSearch import *
 import tweepy
 import time
 # enter keys here
-consumer_key = 'ovs0wuKgyaWl3U3heJGQTrSpe'
-consumer_secret = 'RMUEm84gYwgxHBQFCtoqbE4LdfAIjN4XjgOPqXMPgaq3Kr09SB'
-access_token = '836064650559111169-X3k0Jgw1JjPf83se7Ug1LAy6bFsPP8o'
-access_token_secret = 'mup8qi1aQfwNVmQW5Uv88xSwfafPXZrFaflwJeFo0Nnkk'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 # OAuth process, using the keys and tokens
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
