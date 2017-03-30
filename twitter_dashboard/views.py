@@ -3,10 +3,10 @@ from TwitterSearch import *
 import tweepy
 import time
 # enter keys here
-consumer_key = ''
-consumer_secret = ''
-access_token = ''
-access_token_secret = ''
+consumer_key = 'ovs0wuKgyaWl3U3heJGQTrSpe'
+consumer_secret = 'RMUEm84gYwgxHBQFCtoqbE4LdfAIjN4XjgOPqXMPgaq3Kr09SB'
+access_token = '836064650559111169-X3k0Jgw1JjPf83se7Ug1LAy6bFsPP8o'
+access_token_secret = 'mup8qi1aQfwNVmQW5Uv88xSwfafPXZrFaflwJeFo0Nnkk'
 # OAuth process, using the keys and tokens
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -38,13 +38,12 @@ def tweet_list(request):
         count += 1
         if count == top_five_tweets:
             break
-
     return render(request, 'twitter_dashboard/tweet.html', {'names' : names})
 
 def live_tweets(request):
     # opening and closing the file to clear it for a second search
     open('twitter_dashboard/static/text/system.txt', 'w').close()
-    system_output = open('twitter_dashboard/text/stats/system.txt', 'r+')
+    system_output = open('twitter_dashboard/static/text/system.txt', 'r+')
     try:
         if request.method == 'POST':
             post_request = request.POST
