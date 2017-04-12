@@ -7,7 +7,10 @@
 </div>
 
 <div id="stop_button">
+  <form method="POST" action="{% url 'tweet_list' %}">
+  {% csrf_token %}
   <button type="submit">Stop Search</button>
+  </form>
 </div>
 
 <div>
@@ -18,6 +21,12 @@
   </form>
 </div>
 
+<div class="hover_globe">
+  <input type="button" class="tweet_globe" id="open_location_map" onclick="window.open('{% url 'map_location' %}','_blank')"/>
+  <div class="middle_globe">
+    <div class="text">Press to view locations of Tweets</div>
+  </div>
+</div>
 
 <div>
   <ol id="top_ten">
@@ -29,9 +38,11 @@
 
 
 <div>
+  <nav>
   <p id="live_tweet">Live Tweets</p>
   <ol id="tweet_real_time">
   </ol>
+</nav>
 </div>
 
 <script>
