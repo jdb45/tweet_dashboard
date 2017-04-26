@@ -1,7 +1,7 @@
 from django import forms
 from .models import Tweet
 
-class NewPlaceForm(forms.ModelForm):
+class TweetForm(forms.ModelForm):
     class Meta:
         model = Tweet
-        fields = ('name',)
+        fields = ('user_name', 'date_tweeted', 'tweet', 'location')

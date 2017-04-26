@@ -16,8 +16,15 @@
 <div>
   <form method="POST" action="{% url 'live_tweets' %}">
   {% csrf_token %}
-  <input type="text" id="search_tweets" name="search" placeholder="Search.." value ="">
+  <input type="text" id="search_tweets" name="search" placeholder="Search Tweets...." value ="">
   <button id="search_button" type="submit" value ="search_tweets">Search!</button>
+  </form>
+</div>
+
+<div id="save_button">
+  <form method="POST" action="{% url 'save_information' %}">
+  {% csrf_token %}
+  <button type="submit" >Save</button>
   </form>
 </div>
 

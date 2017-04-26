@@ -131,6 +131,12 @@ button:active {
   top: 130px;
 }
 
+#save_button{
+  position: absolute;
+  left: 460px;
+  top: 200px;
+}
+
 #live_tweet{
   position: absolute;
   box-shadow: 10px 10px 5px #888888;
