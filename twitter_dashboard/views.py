@@ -1,23 +1,13 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from TwitterSearch import *
 from .forms import TweetForm
-import tweepy
 import time
 import folium
 from geopy.geocoders import Nominatim
 import requests
 import requests_cache
+from .twitter_api import *
 
-
-# enter keys here
-consumer_key = ''
-consumer_secret = ''
-access_token = ''
-access_token_secret = ''
-# OAuth process, using the keys and tokens
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
 
 requests_cache.install_cache('twitter_cache', backend='sqlite', expire_after=180)
 
@@ -31,7 +21,6 @@ class TweetLists(object):
     self.date_tweeted = []
 
 info_lists = TweetLists()
-
 
 tso = TwitterSearchOrder()  # create a TwitterSearchOrder object
 tso.set_language('en')  # setting it to English only
