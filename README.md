@@ -17,7 +17,7 @@ This is a dashboard for seeing information about tweets on twitter.
 
 NOTE: The live tweets will sometimes not work correctly unless you clear your browsing history, cookies, and cache before starting the app.
 
-It is recommended to use Google Chrome and to disable to the cache. 
+It is recommended to use Google Chrome and to disable network the cache. 
 
 This is done be doing these steps:
 
