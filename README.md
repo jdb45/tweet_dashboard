@@ -11,9 +11,11 @@ This is a dashboard for seeing information about tweets on twitter.
 
 # *Saves tweets and other information to a database
 
-# *Displaying a map of where the locations of the tweets are coming from
 
-NOTE: The live tweets will sometimes not work correctly unless you clear your browsing history, cookies, and cache.
+# *Displaying a map of where the locations of the tweets are coming from
+<img width="1280" alt="screen shot 2017-04-26 at 7 41 28 pm" src="https://cloud.githubusercontent.com/assets/22032532/25465782/fe7c87b6-2ac9-11e7-9105-27ff056dbd60.png">
+
+NOTE: The live tweets will sometimes not work correctly unless you clear your browsing history, cookies, and cache before starting the app.
 
 It is recommended to use Google Chrome and to disable to the cache. 
 
