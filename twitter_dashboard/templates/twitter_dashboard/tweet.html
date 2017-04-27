@@ -21,10 +21,10 @@
   </form>
 </div>
 
-<div id="save_button">
+<div id="save_button" class="save_tweet">
   <form method="POST" action="{% url 'save_information' %}">
   {% csrf_token %}
-  <button type="submit" >Save</button>
+  <button id='save_size' type="submit" ></button>
   </form>
 </div>
 

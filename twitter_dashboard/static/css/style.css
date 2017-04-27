@@ -131,10 +131,18 @@ button:active {
   top: 130px;
 }
 
+#save_size{
+  background-color: Transparent;
+  width: 139px;
+  height: 125px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #save_button{
   position: absolute;
-  left: 460px;
-  top: 200px;
+  left: 75px;
+  top: 400px;
 }
 
 #live_tweet{
@@ -155,6 +163,12 @@ button:active {
   top: 98px;
 }
 
+.save_tweet {
+  background-image: url(http://127.0.0.1:8000/static/css/floppy.png);
+  background-position:  center;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 5px #888888;
+}
 
 .tweet_globe {
   background-image: url(http://127.0.0.1:8000/static/css/globe.jpeg);
