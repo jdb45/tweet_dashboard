@@ -2,13 +2,13 @@
 
 This is a dashboard for seeing information about tweets on twitter
 This program is to be used for FUN use only.
-This program is NOT to be used for any monetary gain of any sort.
-I am not affiliated with Twitter in anyway. All names and logos are copyright to Twitter.
-Some of the features:
+
+
+## Some of the features:
+# *Displays top trending tweets
+<img width="1275" alt="screen shot 2017-04-26 at 8 51 36 pm" src="https://cloud.githubusercontent.com/assets/22032532/25465383/846e8c64-2ac7-11e7-8db3-865a493a18c3.png">
 
 *Displays live tweets for a searched topic
-
-*Displays top trending tweets
 
 
 *Coming soon
