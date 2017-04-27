@@ -9,7 +9,7 @@ import requests_cache
 from .twitter_api import *
 
 
-requests_cache.install_cache('twitter_cache', backend='sqlite', expire_after=180)
+#requests_cache.install_cache('twitter_cache', backend='sqlite', expire_after=180)
 
 
 class TweetLists(object):

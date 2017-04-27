@@ -73,7 +73,7 @@ ol li {
 }
 
 nav ol {
-  height:200px; width:50%;
+  height:375px; width:50%;
 }
 nav ol {
   overflow:hidden; overflow-y:scroll;
@@ -121,7 +121,7 @@ button:active {
   position: absolute;
   box-shadow: 10px 10px 5px #888888;
   left: 325px;
-  top: 400px;
+  top: 232px;
   color: #FFFFFF;
 }
 
@@ -150,10 +150,10 @@ button:active {
   box-shadow: 10px 10px 5px #888888;
   padding: 10px;
   left: 321px;
-  top: 378px;
+  top: 220px;
   color: #FFFFFF;
   background: #55ACEE;
-  width: 50%
+  width: 50%;
 
 }
 
@@ -171,7 +171,7 @@ button:active {
 }
 
 .tweet_globe {
-  background-image: url(http://127.0.0.1:8000/static/css/globe.jpeg);
+  background-image: url(http://127.0.0.1:8000/static/css/earth.png);
   background-position:  center;
   background-repeat: no-repeat;
   position: absolute;
