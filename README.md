@@ -1,25 +1,26 @@
 # tweet_dashboard
 
-This is a dashboard for seeing information about tweets on twitter
-This program is to be used for FUN use only.
-
+This is a dashboard for seeing information about tweets on twitter.
 
 ## Some of the features:
 # *Displays top trending tweets
 <img width="1275" alt="screen shot 2017-04-26 at 8 51 36 pm" src="https://cloud.githubusercontent.com/assets/22032532/25465383/846e8c64-2ac7-11e7-8db3-865a493a18c3.png">
 
-*Displays live tweets for a searched topic
+# *Displays live tweets for a searched topic
+<img width="1280" alt="screen shot 2017-04-26 at 9 07 41 pm" src="https://cloud.githubusercontent.com/assets/22032532/25465498/39cf780c-2ac8-11e7-9c91-5caceaca5c06.png">
 
+# *Saves tweets and other information to a database
 
-*Coming soon
-
-Saving tweets and other information to a database
-
-Displaying a map of where the locations of the tweets are coming from
-
-Displaying charts of other useful information about where the tweets are coming from
+# *Displaying a map of where the locations of the tweets are coming from
 
 NOTE: The live tweets will sometimes not work correctly unless you clear your browsing history, cookies, and cache.
+
+It is recommended to use Google Chrome and to disable to the cache. 
+
+This is done be doing these steps:
+
+`click the settings icon on top right corner| More Tools | Developer Tools | Network | Disable cache`
+
 
 ### To install
 
@@ -54,7 +55,8 @@ You will be able to use these to log into admin console at
 
 ### Twitter keys
 For this program to work you need Twitter API keys.
-Create a Twitter account (using your personal account is not recommended in case you make a mistake and request to many calls at once).
+
+Create a Twitter account (using your personal account is not recommended).
 [Get API keys from Twitter](https://apps.twitter.com/). The following keys must
 be stored as system environment variables:
 * TWITTER_CONSUMER_KEY
